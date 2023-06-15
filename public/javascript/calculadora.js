@@ -4,7 +4,11 @@ const funcionPredeterminada = () => {
     evento.preventDefault();
     let vph = parseFloat(document.getElementById('valorPorHora').value);
     let iph = parseFloat(document.getElementById('interfazHoras').value);
-    let resultado = vph + iph;
+    let dhtml = parseFloat(document.getElementById('DesarrolloHTML').value);
+    let estCSS = parseFloat(document.getElementById('DesarrolloHTML').value);
+    let ad = parseFloat(document.getElementById('adicionales').value);
+    let corr = parseFloat(document.getElementById('correcciones').value);
+    let resultado = vph + iph + dhtml + estCSS + ad + corr;
     document.getElementById('valorTotal').value = resultado;
   });
 };
