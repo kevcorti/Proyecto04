@@ -5,7 +5,7 @@ const funcionPredeterminada = () => {
     let vph = parseFloat(document.getElementById('valorPorHora').value);
     let iph = parseFloat(document.getElementById('interfazHoras').value);
     let resultado = vph + iph;
-    document.getElementById('valorTotal').value = resultado;
+    document.getElementById('valorTotal').textContent = resultado;
   });
 };
 
