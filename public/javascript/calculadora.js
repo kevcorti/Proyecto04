@@ -9,7 +9,7 @@ const funcionPredeterminada = () => {
     let fad = parseFloat(document.getElementById('adicionales').value);
     let corr = parseFloat(document.getElementById('correcciones').value);
   
-    let resultado = vph + iph + dhtml + estcss + fad +corr;
+    let resultado = vph + iph + dhtml + estcss + fad + corr;
     document.getElementById('valorTotal').value = resultado;
   });
 };
